@@ -26,7 +26,7 @@ Mister Bitcoin is a simple Bitcoin tracking application developed using Angular 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/mister_bitcoin.git
+   git clone https://github.com/shaulrosenberg/misterbitcoin.git
 
 2. Change into the repository's directory:
 
