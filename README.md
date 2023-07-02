@@ -1,27 +1,48 @@
-# Misterbitcoin
+# Mister Bitcoin - Angular Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.2.
+Mister Bitcoin is a simple Bitcoin tracking application developed using Angular and TypeScript. This application showcases how Angular can be used to build interactive, single-page applications by consuming external APIs and handling data.
 
-## Development server
+<!-- ![App screenshot](./path_to_screenshot.png) -->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Displays the current Bitcoin rate in USD.
+- Shows the user's Bitcoin balance.
+- Provides charts with data fetched from the Blockchain API:
+  - Trade volume
+  - Average block size
+  - Market price
+- User search with a contact list filter.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies
 
-## Build
+- Angular
+- TypeScript
+- SCSS
+- RxJS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation and Setup
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone https://github.com/your_username/mister_bitcoin.git
 
-## Running end-to-end tests
+2. Change into the repository's directory:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    cd mister_bitcoin
 
-## Further help
+3. Install the dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    npm install
+
+4. Start the application:
+
+    ng serve --open
+
+
+## Learning Purpose
+This project serves as a practical exercise to understand how to build single-page applications using Angular and TypeScript. It involves the use of various modern web development technologies and techniques, such as consuming APIs, handling promises and observables, modular design, and component-based architecture.
+
+Please feel free to clone this repository, explore the code, and make improvements or additions. Your contributions are always welcome!
+
