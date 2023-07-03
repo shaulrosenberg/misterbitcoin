@@ -1,9 +1,10 @@
 <section class="contact-preview">
     <section class="info">
-        <section class="data">
+        <!-- could also be [routerLink="['pet', pet._id]"] if there are more params -->
+        <a routerLink="/contact/{{contact._id}}" class="data">
             <p>Name: {{contact.name}}</p>
             <p>Email: {{contact.email}}</p>
-        </section>
+        </a>
         <section class="actions">
             <button (click)="onRemoveContact($event)" class="remove-btn">X</button>
         </section>

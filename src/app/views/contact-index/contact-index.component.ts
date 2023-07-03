@@ -15,6 +15,7 @@ export class ContactIndexComponent implements OnInit, OnDestroy {
 	contacts$!: Observable<Contact[]>
 	subscription!: Subscription
 
+    // can simple subscribe to $contacts, and then call loadContacts()
 	ngOnInit(): void {
 		this.contacts$ = this.contactService.contacts$
 		this.subscription = this.contactService.contacts$.subscribe(contacts => {

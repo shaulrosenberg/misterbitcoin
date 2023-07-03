@@ -12,6 +12,8 @@ import { ContactPreviewComponent } from './cmps/contact-preview/contact-preview.
 import { ContactFilterComponent } from './cmps/contact-filter/contact-filter.component';
 import { ContactDetailsComponent } from './views/contact-details/contact-details.component';
 import { StatsComponent } from './views/stats/stats.component';
+import { AppHeaderComponent } from './cmps/app-header/app-header.component';
+import { ContactEditComponent } from './views/contact-edit/contact-edit.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { StatsComponent } from './views/stats/stats.component';
     ContactFilterComponent,
     ContactDetailsComponent,
     StatsComponent,
+    AppHeaderComponent,
+    ContactEditComponent,
   ],
   imports: [
     BrowserModule,

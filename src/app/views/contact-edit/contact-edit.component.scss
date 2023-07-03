@@ -1,0 +1,67 @@
+.contact-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 600px; // Making form a bit wider
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    h2 {
+      color: #008080; 
+      margin-bottom: 1em;
+    }
+  
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+  
+      label {
+        font-weight: bold;
+        color: #008080; // Vibrant color for label
+      }
+  
+      input {
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid lighten(#008080, 20%); // Vibrant color for input border
+        transition: all 0.3s ease;
+  
+        &:focus {
+          outline: none;
+          border-color: darken(#008080, 10%); // Vibrant color for input border on focus
+          box-shadow: 0 0 5px darken(#008080, 20%); // Vibrant color for input shadow on focus
+        }
+      }
+  
+      button {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: none;
+        background-color: #008080; // Vibrant color for button
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-self: flex-start;
+  
+        &:hover {
+          background-color: darken(#008080, 20%); // Darker vibrant color for button on hover
+        }
+      }
+    }
+  
+    a {
+      margin-top: 1em;
+      color: darken(#008080, 10%); // Vibrant color for link
+      text-decoration: none;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        color: darken(#008080, 20%); // Darker vibrant color for link on hover
+      }
+    }
+  }
+  

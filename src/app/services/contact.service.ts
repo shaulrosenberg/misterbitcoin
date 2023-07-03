@@ -78,10 +78,10 @@ export class ContactService {
 
 
     private _updateContact(contact: Contact) {
-
-        return from(storageService.post(ENTITY, contact))
+        return from(storageService.put(ENTITY, contact))
             .pipe(
                 tap(updatedContact => {
+                    console.log('updatedContact:', updatedContact)
                     const contacts = this._contacts$.value
                     this._contacts$.next(contacts.map(contact => contact._id === updatedContact._id ? updatedContact : contact))
                 }),
@@ -93,7 +93,7 @@ export class ContactService {
     private _addContact(contact: Contact) {
         const newContact = new Contact(contact.name, contact.email, contact.phone);
         if (typeof newContact.setId === 'function') newContact.setId(this._getRandomId());
-        return from(storageService.post(ENTITY, contact))
+        return from(storageService.post(ENTITY, newContact))
             .pipe(
                 tap(newContact => {
                     const contacts = this._contacts$.value
