@@ -19,6 +19,7 @@ export class ContactEditComponent implements OnInit, OnDestroy {
     contact = this.contactService.getEmptyContact() as Contact
     subscription!: Subscription
 
+    // instead use data from ActivatedLink.data -> contact is already fetched from resolver
     ngOnInit(): void {
         this.route.params
             .pipe(
