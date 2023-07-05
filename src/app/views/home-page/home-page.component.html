@@ -1,5 +1,29 @@
-<div class="home-page">
-    <h2>Welcome, {{user?.name}}</h2>
-    <p>You have {{user?.coins}} coins</p>
-    <p>Current Bitcoin rate: {{currentRate}}</p>
-</div>
+<section class="hero-section">
+    <h1 *ngIf="!user">Hello guest</h1>
+    <h1 *ngIf="user">Welcome to Mr Bitcoin! {{ user.name }}</h1>
+    <p>Your reliable source for real-time Bitcoin data.</p>
+    <move-list *ngIf="user"></move-list>
+    <a *ngIf="!user" routerLink="/signup">Login</a>
+</section>
+<section class="features-section">
+    <div class="feature">
+        <h2>Real-time Prices</h2>
+        <p>Track Bitcoin prices in real-time and stay updated on the latest market trends.</p>
+    </div>
+    <div class="feature">
+        <h2>Market Trends</h2>
+        <p>Analyze comprehensive market trends and gain insights to make informed decisions.</p>
+    </div>
+    <div class="feature">
+        <h2>Contact Management</h2>
+        <p>Manage your contacts easily and efficiently with our built-in contact management system.</p>
+    </div>
+</section>
+<section class="bitcoin-img-section">
+    <div class="img-container">
+        <img src="assets/bitcoin1.jpg" alt="Bitcoin Image 1">
+    </div>
+    <div class="img-container">
+        <img src="assets/bitcoin2.jpg" alt="Bitcoin Image 2">
+    </div>
+</section>

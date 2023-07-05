@@ -31,7 +31,4 @@ export class ContactDetailsComponent implements OnInit, OnDestroy {
         this.subscription?.unsubscribe()
     }
 
-    onBack() {
-        this.router.navigateByUrl('/')
-    }
 }

@@ -6,7 +6,6 @@
     // wraps the header and footer
     .container {
         width: 100%;
-        padding: 1rem;
     }
 
     header {
@@ -25,13 +24,23 @@
         display: flex;
     }
 
-    footer {
-        background-color: #f8f8f8;
-        color: #666;
-        display: flex;
-        justify-content: center;
+    .footer {
+        background-color: #24292e;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+
         p {
-            margin: 0;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #e6e6e6;
+            }
         }
     }
 }

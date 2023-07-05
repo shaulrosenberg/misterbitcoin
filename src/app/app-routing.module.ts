@@ -6,12 +6,14 @@ import { ContactDetailsComponent } from './views/contact-details/contact-details
 import { StatsComponent } from './views/stats/stats.component';
 import { ContactEditComponent } from './views/contact-edit/contact-edit.component';
 import { contactResolver } from './resolvers/contact.resolver';
+import { SignupPageComponent } from './views/signup-page/signup-page.component';
 
 const routes: Routes = [
     { path: 'contact/:id', component: ContactDetailsComponent },
-    { path: 'edit/:id', component: ContactEditComponent, resolve: {contact: contactResolver}},
+    { path: 'edit/:id', component: ContactEditComponent, resolve: { contact: contactResolver } },
     { path: 'edit', component: ContactEditComponent },
     { path: 'contact', component: ContactIndexComponent },
+    { path: 'signup', component: SignupPageComponent },
     { path: 'stats', component: StatsComponent },
     { path: '', component: HomePageComponent }
 ];

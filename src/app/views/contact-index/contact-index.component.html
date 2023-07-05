@@ -1,5 +1,7 @@
 <section class="contact-index">
-    <a routerLink="/edit">Add Contact</a>
-    <contact-filter></contact-filter>
+    <div class="form-group">
+        <a class="btn btn-add" routerLink="/edit">Add Contact</a>
+        <contact-filter></contact-filter>
+    </div>
     <contact-list (removeContact)="onRemoveContact($event)" [contacts]="contacts$ | async"></contact-list>
 </section>

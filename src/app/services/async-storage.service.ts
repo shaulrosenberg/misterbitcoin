@@ -1,4 +1,5 @@
 import { Contact } from "../models/contact.model"
+import { User } from "../models/user.model"
 
 export const storageService = {
   query,

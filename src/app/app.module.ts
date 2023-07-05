@@ -14,28 +14,34 @@ import { ContactDetailsComponent } from './views/contact-details/contact-details
 import { StatsComponent } from './views/stats/stats.component';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { ContactEditComponent } from './views/contact-edit/contact-edit.component';
+import { MoveListComponent } from './cmps/move-list/move-list.component';
+import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
+import { SignupPageComponent } from './views/signup-page/signup-page.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    ContactListComponent,
-    ContactIndexComponent,
-    ContactPreviewComponent,
-    ContactFilterComponent,
-    ContactDetailsComponent,
-    StatsComponent,
-    AppHeaderComponent,
-    ContactEditComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomePageComponent,
+        ContactListComponent,
+        ContactIndexComponent,
+        ContactPreviewComponent,
+        ContactFilterComponent,
+        ContactDetailsComponent,
+        StatsComponent,
+        AppHeaderComponent,
+        ContactEditComponent,
+        MoveListComponent,
+        TransferFundComponent,
+        SignupPageComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

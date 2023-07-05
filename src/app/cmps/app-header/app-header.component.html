@@ -1,8 +1,19 @@
 <header class="container">
-    <h1 class="logo">Mister Bitcoin</h1>
-    <nav>
+    <h1 (click)="redirect()" class="logo">Mister Bitcoin</h1>
+
+    <div class="user-info" *ngIf="user">
+        Welcome, {{ user.name }}! Balance: {{ user.coins }}
+        <a (click)="logout()">Logout</a>
+    </div>
+
+
+
+    <nav class="nav-links">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a routerLink="/contact" routerLinkActive="active">Contacts</a>
         <a routerLink="/stats" routerLinkActive="active">Statistics</a>
+        <div *ngIf="!user">
+            <a routerLink="/signup" routerLinkActive="active">Signup</a>
+        </div>
     </nav>
 </header>

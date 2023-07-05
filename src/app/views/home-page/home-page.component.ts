@@ -17,8 +17,9 @@ export class HomePageComponent implements OnInit {
     constructor(private bitcoinService: BitcoinService, private userService: UserService) { }
 
     ngOnInit(): void {
-        this.user = this.userService.getUser()
-
+        this.userService.getUser().subscribe(user => {
+            this.user = user;
+        });
         this.bitcoinService.getRate().subscribe(rate => {
             this.currentRate = rate.bpi.USD.rate;
         });

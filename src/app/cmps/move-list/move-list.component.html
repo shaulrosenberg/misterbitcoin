@@ -1,0 +1,17 @@
+<section class="move-list">
+    <h2>Latest Transactions</h2>
+    <div *ngIf="user && moves.length > 0">
+        <ul>
+            <li *ngFor="let move of moves">
+                <p class="move-details">
+                    <span>{{ move.to }}</span>
+                    <span>{{ move.amount }} BTC</span>
+                    <span>{{ move.at | date: 'medium' }}</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="!user || moves.length === 0">
+        <p>No moves to display.</p>
+    </div>
+</section>
